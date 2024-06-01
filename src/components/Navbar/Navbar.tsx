@@ -33,7 +33,7 @@ const Navbar = () => {
 
     return (
         <div className='shadow-lg w-full static top-0 left-0'>
-            <div className="flex justify-center items-center h-[11vh]">
+            <div className="flex justify-center items-center h-[9vh] md:h-[11vh]">
 
                 <div className="w-[12%] md:w-[8%] flex items-center z-[999]">
                     <Sidebar />

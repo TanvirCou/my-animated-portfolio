@@ -42,13 +42,13 @@ const SingleWork = ({ data }: DataProps) => {
                 <motion.div className='w-[40%] max-md:hidden flex flex-col gap-y-4' style={{ y }} transition={{ duration: 1 }}>
                     <p className='text-xl font-semibold'>{data.title}</p>
                     <p className='text-sm text-gray-400'>{data.desc}</p>
-                    <a href={data.liveLink} className='bg-[orange] text-white px-4 py-1.5 rounded-md font-medium cursor-pointer w-fit'>Live Link</a>
+                    <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} href={data.liveLink} type='button' target='_blank' rel="noreferrer" className='bg-[orange] text-white px-4 py-1.5 rounded-md font-medium cursor-pointer w-fit'>Live Link</motion.a>
                 </motion.div>
 
                 <div className='w-full md:w-[40%] md:hidden flex flex-col items-center gap-y-4'>
                     <p className='text-xl font-semibold'>{data.title}</p>
                     <p className='text-sm text-gray-400 text-center'>{data.desc}</p>
-                    <a href={data.liveLink} className='bg-[orange] text-white px-4 py-1.5 rounded-md font-medium cursor-pointer w-fit'>Live Link</a>
+                    <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} href={data.liveLink} type='button' target='_blank' rel="noreferrer"  className='bg-[orange] text-white px-4 py-1.5 rounded-md font-medium cursor-pointer w-fit'>Live Link</motion.a>
                 </div>
             </div>
         </div>

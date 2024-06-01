@@ -65,7 +65,7 @@ const Contact = () => {
                     <motion.p variants={textVariants} className='text-4xl md:text-6xl font-semibold text-white leading-[52px]'>Let&#39;s work together</motion.p>
                     <motion.div variants={textVariants}>
                         <p className='text-md text-white leading-4'>Mail</p>
-                        <p className='text-sm'>ahmed.tnvr@gmail.com</p>
+                        <p className='text-sm'>ahmed.tnvr999@gmail.com</p>
                     </motion.div>
                     <motion.div variants={textVariants}>
                         <p className='text-md text-white'>Address</p>
@@ -85,10 +85,10 @@ const Contact = () => {
                         </motion.svg>
                     </motion.div>
                     <motion.form ref={formRef} onSubmit={sendEmail} variants={formVariants} initial="hidden" animate="visible" action="" className='flex flex-col gap-y-3'>
-                        <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} placeholder='Name' className='w-full h-9 bg-transparent border border-white px-1.5 rounded-sm' />
-                        <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email' className='w-full h-9 bg-transparent border border-white px-1.5 rounded-sm' />
-                        <textarea rows={6} name="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Message' className='w-full bg-transparent border border-white px-1.5 rounded-sm' />
-                        <button type="submit" className='text-white text-md font-medium bg-[orange] rounded-sm h-9'>Send</button>
+                        <input type="text" required name="name" value={name} onChange={(e) => setName(e.target.value)} placeholder='Name' className='w-full h-9 bg-transparent border border-white px-1.5 rounded-sm' />
+                        <input type="email" required name="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email' className='w-full h-9 bg-transparent border border-white px-1.5 rounded-sm' />
+                        <textarea rows={6} required name="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Message' className='w-full bg-transparent border border-white px-1.5 rounded-sm' />
+                        <motion.button whileHover={{ scaleY: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} type="submit" className='text-white text-md font-medium bg-[orange] rounded-sm h-9'>Send</motion.button>
                     </motion.form>
 
                     {success &&

@@ -18,8 +18,10 @@ const Hero = () => {
                         <motion.p variants={variants} className="text-2xl md:text-4xl font-semibold text-white text-center md:text-start font-[Poppins] ">Tanvir Ahmed</motion.p>
                         <motion.p variants={variants} className="text-4xl md:text-7xl font-semibold text-white text-center md:text-start font-[Poppins] ">MERN Stack Developer</motion.p>
                         <motion.div variants={variants} className="flex max-md:flex-col gap-y-3 md:gap-x-6 items-center">
-                            <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} className="px-4 py-1.5 rounded-md bg-transparent border border-white text-white text-md font-medium">See my latest works</motion.button>
-                            <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} className="px-4 py-1.5 rounded-md bg-white text-black text-md font-medium">Contact me</motion.button>
+                            <a href="/#Portfolio">
+                            <motion.button  whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} className="cursor pointer px-4 py-1.5 rounded-md bg-transparent border border-white text-white text-md font-medium">See my latest works</motion.button>
+                            </a>
+                            <motion.a href="/#Contact" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} className="cursor pointer px-4 py-1.5 rounded-md bg-white text-black text-md font-medium">Contact me</motion.a>
                         </motion.div>
                         <motion.div variants={variants} animate="scrollVisible" className="cursor-pointer flex justify-center md:block">
                             <img src={scrollImage} alt="" className="w-10 md:w-12" />
@@ -32,7 +34,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <motion.p initial={{ x: 0 }} animate={{ x: "-240%" }} transition={{ duration: 20, repeat: Infinity, repeatType: "mirror" }} className="absolute w-[50%] -bottom-8 font-semibold text-[15vh] md:text-[30vh] text-[#ffffff09] whitespace-nowrap">
+            <motion.p initial={{ x: 0 }} animate={{ x: "-240%" }} transition={{ duration: 20, repeat: Infinity, repeatType: "mirror" }} className="absolute w-[50%] -bottom-8 font-semibold text-[15vh] md:text-[22vh] text-[#ffffff09] whitespace-nowrap">
                 React js and Next js developer
             </motion.p>
         </div>

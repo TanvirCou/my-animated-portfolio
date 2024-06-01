@@ -35,20 +35,20 @@ const Sidebar = () => {
 
 
     return (
-        <div className='w-full'>
+        <div className='w-full relative'>
             <AnimatePresence>
                 {!open &&
-                    <motion.button variants={buttonVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} initial="hidden" animate="visible" exit="exit" onClick={() => setOpen(true)} className='bg-white p-3 md:p-4 fixed top-[25px] md:top-2 left-1.5 md:left-3 rounded-full'>
+                    <motion.button variants={buttonVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} initial="hidden" animate="visible" exit="exit" onClick={() => setOpen(true)} className='bg-white p-3 md:p-4 fixed top-[18px] md:top-2 left-1.5 md:left-3 rounded-full'>
                         <RxHamburgerMenu color='black' size={22} />
                     </motion.button>}
             </AnimatePresence>
             <AnimatePresence>
                 {
                     open &&
-                    <motion.div variants={divVariants} initial="hidden" animate="visible" exit="exit" className='w-[50%] md:w-[35%] xl:w-[20%] h-screen top-0 left-0 bottom-0 fixed flex items-center justify-center bg-white'>
+                    <motion.div variants={divVariants} initial="hidden" animate="visible" exit="exit" className='w-[55%] md:w-[35%] xl:w-[20%] h-screen top-0 left-0 bottom-0 fixed flex items-center justify-center bg-white'>
                         <div>
                             {items.map((i, index) => (
-                                <motion.div variants={itemVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} key={index} className='text-black text-lg font-semibold cursor-pointer text-center py-2'>
+                                <motion.div onClick={() => setOpen(false)} variants={itemVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} key={index} className='text-black text-lg font-semibold cursor-pointer text-center py-2'>
                                     <a href={`/#${i}`}>{i}</a>
                                 </motion.div>
                             ))}
