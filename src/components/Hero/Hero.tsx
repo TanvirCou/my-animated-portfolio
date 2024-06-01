@@ -34,7 +34,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <motion.p initial={{ x: 0 }} animate={{ x: "-240%" }} transition={{ duration: 20, repeat: Infinity, repeatType: "mirror" }} className="absolute w-[50%] -bottom-8 font-semibold text-[10vh] md:text-[22vh] text-[#ffffff09] whitespace-nowrap">
+            <motion.p initial={{ x: 0 }} animate={{ x: "-240%" }} transition={{ duration: 20, repeat: Infinity, repeatType: "mirror" }} className="absolute w-[50%] -bottom-2 md:-bottom-8 font-semibold text-[10vh] md:text-[22vh] text-[#ffffff09] whitespace-nowrap">
                 React js and Next js developer
             </motion.p>
         </div>
