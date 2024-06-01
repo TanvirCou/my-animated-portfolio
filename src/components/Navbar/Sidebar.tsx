@@ -38,7 +38,7 @@ const Sidebar = () => {
         <div className='w-full relative'>
             <AnimatePresence>
                 {!open &&
-                    <motion.button variants={buttonVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} initial="hidden" animate="visible" exit="exit" onClick={() => setOpen(true)} className='bg-white p-3 md:p-4 fixed top-[18px] md:top-2 left-1.5 md:left-3 rounded-full'>
+                    <motion.button variants={buttonVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} initial="hidden" animate="visible" exit="exit" onClick={() => setOpen(true)} className='bg-white p-3 md:p-4 fixed top-[15px] md:top-2 left-1.5 md:left-3 rounded-full'>
                         <RxHamburgerMenu color='black' size={22} />
                     </motion.button>}
             </AnimatePresence>
