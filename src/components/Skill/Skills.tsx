@@ -8,7 +8,7 @@ const variants = {
 
 const Skills = () => {
     return (
-        <div className="overflow-hidden w-full h-screen">
+        <div className="overflow-hidden w-full h-screen bg-gradient-to-b from-[#0c0c1d] to-[#111132]">
             <motion.div initial={{ x: 500, opacity: 0 }} transition={{ duration: 1 }} whileInView={{ x: 0, opacity: 1 }} className='flex items-center justify-end pt-6 '>
                 <p className='text-xl md:text-3xl font-semibold mr-2 text-gray-300'>Skills</p>
                 <hr className='w-[40%] md:w-[30%] border-top-1 border-gray-400' />
