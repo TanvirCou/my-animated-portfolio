@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser'
+import { toast } from "react-toastify";
 
 const textVariants = {
     hidden: { opacity: 0 },
@@ -17,10 +18,10 @@ const formVariants = {
     visible: { opacity: 1, transition: { duration: 1, delay: 4 } },
 }
 
-const messageVariants = {
-    hidden: { opacity: 1 },
-    visible: { opacity: 0, transition: { duration: 1, delay: 4 } },
-}
+// const messageVariants = {
+//     hidden: { opacity: 1 },
+//     visible: { opacity: 0, transition: { duration: 1, delay: 4 } },
+// }
 
 const Contact = () => {
     const ref = useRef<HTMLDivElement | null>(null);
@@ -28,8 +29,8 @@ const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-    const [success, setSuccess] = useState(false);
-    const [error, setError] = useState(false);
+    // const [success, setSuccess] = useState(false);
+    // const [error, setError] = useState(false);
 
     const isInView = useInView(ref, { amount: "all" });
 
@@ -44,15 +45,17 @@ const Contact = () => {
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
-                    setSuccess(true);
+                    // console.log('SUCCESS!');
+                    // setSuccess(true);
                     setName("");
                     setEmail("");
                     setMessage("");
+                    toast.success("Successfully sent")
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
-                    setError(false);
+                    // setError(false);
+                    toast.error("There is an error.Please try again")
                 },
             );
     };
@@ -91,7 +94,7 @@ const Contact = () => {
                         <motion.button whileHover={{ scaleY: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} type="submit" className='text-white text-md font-medium bg-[orange] rounded-sm h-9'>Send</motion.button>
                     </motion.form>
 
-                    {success &&
+                    {/* {success &&
                         <motion.div variants={messageVariants} initial="hidden" animate="visible" className="mt-2 bg-white text-md font-medium flex items-center justify-center rounded-sm h-9">
                             <p className="text-md font-medium text-green-600">Successfully sent</p>
                         </motion.div>}
@@ -99,7 +102,7 @@ const Contact = () => {
                     {error &&
                         <motion.div variants={messageVariants} initial="hidden" animate="visible" className="mt-2 bg-white text-md font-medium flex items-center justify-center rounded-sm h-9">
                             <p className="text-md font-medium text-red-600">There is an error.Please try again</p>
-                        </motion.div>}
+                        </motion.div>} */}
                 </div>
             </motion.div>
         </motion.div>

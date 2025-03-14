@@ -30,8 +30,8 @@ const crossVariants = {
 const Sidebar = () => {
     const [open, setOpen] = useState(false);
 
-    const items = ["Homepage", "Skill", "Portfolio", "Contact"];
- 
+    const items = ["Home", "Skill", "Portfolio", "Contact"];
+
     return (
         <div className='w-full relative'>
             <AnimatePresence>

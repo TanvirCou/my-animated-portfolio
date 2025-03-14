@@ -1,3 +1,4 @@
+import { ToastContainer } from "react-toastify"
 import Contact from "./components/Contact/Contact"
 import Cursor from "./components/Cursor/Cursor"
 import Hero from "./components/Hero/Hero"
@@ -28,6 +29,16 @@ function App() {
       <section className="h-screen snap-center" id="Contact">
         <Contact />
       </section>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnHover
+        theme="dark"
+      />
     </div>
   )
 }
