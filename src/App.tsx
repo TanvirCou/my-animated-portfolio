@@ -37,7 +37,7 @@ function App() {
         closeOnClick={false}
         rtl={false}
         pauseOnHover
-        theme="dark"
+        theme="light"
       />
     </div>
   )
