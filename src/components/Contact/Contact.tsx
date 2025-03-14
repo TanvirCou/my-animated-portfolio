@@ -73,7 +73,7 @@ const Contact = () => {
                     </motion.div>
                     <motion.div variants={textVariants}>
                         <p className='text-md text-white'>Phone</p>
-                        <p className='text-sm'>+800-1859594373</p>
+                        <p className='text-sm'>+880-1859594373</p>
                     </motion.div>
                 </motion.div>
                 <div className='w-full md:w-[40%] relative'>

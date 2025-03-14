@@ -16,15 +16,15 @@ export const skills = [
         level: 'Intermediate',
     },
     {
-        name: 'JavaScript',
+        name: 'Typescript',
         level: 'Intermediate',
     },
     {
-        name: 'React Js',
+        name: 'React JS',
         level: 'Intermediate',
     },
     {
-        name: 'Next Js',
+        name: 'Next JS',
         level: 'Intermediate',
     },
     {
@@ -36,11 +36,11 @@ export const skills = [
         level: 'Intermediate',
     },
     {
-        name: 'Node Js',
+        name: 'Node JS',
         level: 'Basic'
     },
     {
-        name: 'Express Js',
+        name: 'Express JS',
         level: 'Basic'
     },
     {
@@ -49,6 +49,14 @@ export const skills = [
     },
     {
         name: 'Mongoose',
+        level: 'Basic'
+    },
+    {
+        name: 'Prisma',
+        level: 'Basic'
+    },
+    {
+        name: 'PostgreSQL',
         level: 'Basic'
     },
 ];
