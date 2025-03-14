@@ -30,7 +30,7 @@ function App() {
         <Contact />
       </section>
       <ToastContainer
-        position="bottom-center"
+        position="bottom-right"
         autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}
