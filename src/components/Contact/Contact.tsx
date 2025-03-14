@@ -40,7 +40,7 @@ const Contact = () => {
 
         emailjs
             .sendForm('service_dpf6f2s', 'template_4ocgs2u', current, {
-                publicKey: 'MZJNNuulqEl4kuNRF',
+                publicKey: '6Hs-cs1FIrC7AqTcK',
             })
             .then(
                 () => {
