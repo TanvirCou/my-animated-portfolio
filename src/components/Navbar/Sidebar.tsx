@@ -47,7 +47,7 @@ const Sidebar = () => {
                         <div>
                             {items.map((i, index) => (
                                 <motion.div onClick={() => setOpen(false)} variants={itemVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} key={index} className='text-black text-lg font-semibold cursor-pointer text-center py-2'>
-                                    <a href={`/#${i}`}>{i}</a>
+                                    <a href={`/#${i.toLowerCase()}`}>{i}</a>
                                 </motion.div>
                             ))}
                         </div>

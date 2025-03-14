@@ -12,21 +12,21 @@ function App() {
   return (
     <div>
       <Cursor />
-      <section className="h-screen snap-center" id="Homepage">
+      <section className="h-screen snap-center" id="home">
         <Navbar />
         <Hero />
       </section>
       <section className="h-screen snap-center">
         <Parallax type="skill" />
       </section>
-      <section className="h-screen snap-center" id="Skill">
+      <section className="h-screen snap-center" id="skill">
         <Skills />
       </section>
       <section className="h-screen snap-center">
         <Parallax type="portfolio" />
       </section>
       <Portfolio />
-      <section className="h-screen snap-center" id="Contact">
+      <section className="h-screen snap-center" id="contact">
         <Contact />
       </section>
       <ToastContainer

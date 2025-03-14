@@ -14,7 +14,7 @@ const Portfolio = () => {
     const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30 })
 
     return (
-        <div ref={ref} id="Portfolio">
+        <div ref={ref} id="portfolio">
             <div className="sticky top-0 pt-12 left-0 text-center w-full  text-[orange]">
                 <p className="text-3xl font-semibold">Featured Works</p>
                 <motion.div style={{ scaleX }} className="h-2 mt-2 bg-white mx-3 rounded-md"></motion.div>
