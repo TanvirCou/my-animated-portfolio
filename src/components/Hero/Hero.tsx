@@ -34,13 +34,13 @@ const Hero = () => {
             <div className="flex max-md:flex-col-reverse max-md:items-center md:w-full lg:w-[90%] ">
                 <div className="w-full md:w-[50%] max-md:h-[44vh] flex items-center justify-center">
                     <motion.div variants={variants} initial="hidden" animate="visible" className="flex flex-col justify-center gap-y-5 lg:gap-y-8 w-[70%]">
-                        <motion.p variants={variants} className="text-2xl md:text-4xl font-semibold text-white text-center md:text-start font-[Poppins] ">Tanvir Ahmed</motion.p>
-                        <motion.p variants={variants} className="text-4xl md:text-7xl font-semibold text-white text-center md:text-start font-[Poppins] ">MERN Stack Developer</motion.p>
+                        <motion.p variants={variants} className="text-2xl md:text-4xl font-semibold text-white text-center md:text-start font-[Poppins] ">Kazi Tanvir Ahmed</motion.p>
+                        <motion.p variants={variants} className="text-4xl md:text-7xl font-semibold text-white text-center md:text-start font-[Poppins] ">Frontend Developer</motion.p>
                         <motion.div variants={variants} className="flex max-md:flex-col gap-y-3 md:gap-x-6 items-center">
-                            <a href="/#Portfolio">
+                            <a href="/#portfolio">
                                 <motion.button style={{ border, boxShadow }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} className="cursor pointer px-4 py-1.5 rounded-md bg-transparent border border-white text-white text-md font-medium">See my latest works</motion.button>
                             </a>
-                            <motion.a href="/#Contact" style={{ border, boxShadow }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} className="cursor pointer px-4 py-1.5 rounded-md border border-white text-white text-md font-medium">Contact me</motion.a>
+                            <motion.a href="/#contact" style={{ border, boxShadow }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} className="cursor pointer px-4 py-1.5 rounded-md border border-white text-white text-md font-medium">Contact me</motion.a>
                         </motion.div>
                         <motion.div variants={variants} animate="scrollVisible" className="cursor-pointer flex justify-center md:block">
                             <img src={scrollImage} alt="" className="w-10 md:w-12" />

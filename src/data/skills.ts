@@ -20,15 +20,15 @@ export const skills = [
         level: 'Intermediate',
     },
     {
-        name: 'React JS',
+        name: 'React.js',
         level: 'Intermediate',
     },
     {
-        name: 'Next JS',
+        name: 'Next.js',
         level: 'Intermediate',
     },
     {
-        name: 'Framer Motion',
+        name: 'Redux',
         level: 'Intermediate',
     },
     {
@@ -36,11 +36,11 @@ export const skills = [
         level: 'Intermediate',
     },
     {
-        name: 'Node JS',
+        name: 'Node.js',
         level: 'Basic'
     },
     {
-        name: 'Express JS',
+        name: 'Express.js',
         level: 'Basic'
     },
     {

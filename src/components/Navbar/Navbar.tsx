@@ -42,7 +42,7 @@ const Navbar = () => {
                 <div className='flex items-center justify-between w-[88%] md:w-[92%] bg-inherit md:px-20 px-6 '>
                     <motion.div variants={variants} initial="hidden" animate="visible" className='font-bold text-lg md:text-xl cursor-pointer items-center font-[Poppins] 
       text-[lightgray]'>
-                        Tanvir Ahmed
+                        Tanvir
                     </motion.div>
 
                     <div className="flex items-center gap-x-3 md:gap-x-6 ">
