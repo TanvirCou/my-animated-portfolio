@@ -32,6 +32,10 @@ const Contact = () => {
     // const [success, setSuccess] = useState(false);
     // const [error, setError] = useState(false);
 
+    const serviceId = import.meta.env.VITE_SERVICE_ID;
+    const templateId = import.meta.env.VITE_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+
     const isInView = useInView(ref, { amount: "all" });
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -40,8 +44,8 @@ const Contact = () => {
         const current = formRef?.current || "";
 
         emailjs
-            .sendForm('service_dpf6f2s', 'template_4ocgs2u', current, {
-                publicKey: '6Hs-cs1FIrC7AqTcK',
+            .sendForm(serviceId, templateId, current, {
+                publicKey: publicKey,
             })
             .then(
                 () => {
@@ -91,7 +95,7 @@ const Contact = () => {
                         <input type="text" required name="name" value={name} onChange={(e) => setName(e.target.value)} placeholder='Name' className='w-full h-9 bg-transparent border border-white px-1.5 rounded-sm' />
                         <input type="email" required name="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email' className='w-full h-9 bg-transparent border border-white px-1.5 rounded-sm' />
                         <textarea rows={6} required name="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Message' className='w-full bg-transparent border border-white px-1.5 rounded-sm' />
-                        <motion.button whileHover={{ scaleY: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} type="submit" className='text-white text-md font-medium bg-[orange] rounded-sm h-9'>Send</motion.button>
+                        <motion.button initial={{ scale: 1 }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} type="submit" className='text-white text-md font-medium bg-[orange] rounded-sm h-9'>Send</motion.button>
                     </motion.form>
 
                     {/* {success &&

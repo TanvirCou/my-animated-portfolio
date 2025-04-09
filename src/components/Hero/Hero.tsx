@@ -2,6 +2,7 @@ import image from "../../assets/tnvr.png";
 import scrollImage from "../../assets/scroll.png";
 import { animate, motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { useEffect } from "react";
+import resume from "../../assets/Kazi_Tanvir_Ahmed.pdf";
 
 const variants = {
     hidden: { x: -100, opacity: 0 },
@@ -37,9 +38,7 @@ const Hero = () => {
                         <motion.p variants={variants} className="text-2xl md:text-4xl font-semibold text-white text-center md:text-start font-[Poppins] ">Kazi Tanvir Ahmed</motion.p>
                         <motion.p variants={variants} className="text-4xl md:text-7xl font-semibold text-white text-center md:text-start font-[Poppins] ">Frontend Developer</motion.p>
                         <motion.div variants={variants} className="flex max-md:flex-col gap-y-3 md:gap-x-6 items-center">
-                            <a href="/#portfolio">
-                                <motion.button style={{ border, boxShadow }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} className="cursor pointer px-4 py-1.5 rounded-md bg-transparent border border-white text-white text-md font-medium">See my latest works</motion.button>
-                            </a>
+                            <motion.a href={resume} target="_blank" rel="noopener noreferrer" style={{ border, boxShadow }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} className="cursor pointer px-4 py-1.5 rounded-md bg-transparent border border-white text-white text-md font-medium">Get Resume</motion.a>
                             <motion.a href="/#contact" style={{ border, boxShadow }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} className="cursor pointer px-4 py-1.5 rounded-md border border-white text-white text-md font-medium">Contact me</motion.a>
                         </motion.div>
                         <motion.div variants={variants} animate="scrollVisible" className="cursor-pointer flex justify-center md:block">
