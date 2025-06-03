@@ -13,7 +13,7 @@ export const featuredData = [
     desc: "Inkly – A modern, responsive blog web application built with Next.js, TypeScript, and Tailwind CSS.It includes separate dashboards for users and admins",
     githubClient: "https://github.com/TanvirCou/inkly",
     liveLink: "https://inkly-six.vercel.app/",
-    img: "https://ik.imagekit.io/25kitplzn/inkly.png",
+    img: "https://ik.imagekit.io/25kitplzn/inkly.png?updatedAt=1748982997324",
   },
   {
     id: 3,
